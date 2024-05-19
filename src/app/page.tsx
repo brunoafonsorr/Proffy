@@ -1,5 +1,9 @@
+import Landing from '../pages/Landing';
+
 export default function Home() {
   return (
-    <h1>Hello World</h1>
+    <div id="root">
+      <Landing />
+    </div>
   );
 }
