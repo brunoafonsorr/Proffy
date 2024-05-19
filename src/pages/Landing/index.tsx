@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import './styles.scss';
 
 import logoImg from '../../assets/images/logo.svg';
 import landingPage from '../../assets/images/landing.svg';
@@ -12,7 +13,7 @@ export default function Landing() {
   return (
     <div id="page-landing">
       <div id="page-landing-content" className="container">
-        <div id="logo-container">
+        <div className="logo-container">
           <Image priority
             src={logoImg}
             alt='Proffy'
