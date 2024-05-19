@@ -11,14 +11,15 @@
 
   .logo-container {
     text-align: center;
-    margin: 2rem 0 3rem 0;
+    margin-bottom: 3.2rem;
     img {
-      height: 8rem;
+      height: 10rem;
     }
     h2 {
       font-weight: 500;
-      font-size: 2rem;
+      font-size: 2.4rem;
       line-height: 4.6rem;
+      margin-top: 0.8rem;
     }
   }
   
@@ -29,10 +30,10 @@
   .buttons-container {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 3.2rem 0;
     a {
-      width: 23rem;
-      height: 8rem;
+      width: 30rem;
+      height: 10.4rem;
       border-radius: 0.8rem;
       font: 700 2.0rem Archivo;
       
@@ -79,3 +80,54 @@
   }
 }
 
+@media (min-width: 1100px) {
+  #page-landing-content {
+    max-width: 1100px;
+
+    display: grid;
+    grid-template-rows: 350px 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "logo hero hero"
+      "buttons buttons total"
+    ;
+
+    .logo-container {
+      grid-area: logo;
+      align-self: center;
+      margin: 0;
+      text-align: left;
+      
+      h2 {
+        text-align: initial;
+        font-size: 3.6rem;
+      }
+      img {
+        height: 100%;
+      }
+    }
+
+    .hero-image {
+      grid-area: hero;
+      justify-self: end;
+    }
+
+    .buttons-container {
+      grid-area: buttons;
+      justify-content: flex-start;
+      
+      a {
+        font-size: 2.4rem;
+        
+        img {
+          margin-right: 2.4rem;
+        }
+      }
+    }
+
+    .total-connections {
+      grid-area: total;
+      justify-self: end;
+    }
+  }
+}

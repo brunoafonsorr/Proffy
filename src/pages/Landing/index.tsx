@@ -38,9 +38,9 @@ export default function Landing() {
           <Link href="/study" className='give-classes'>
             <Image priority
               src={giveClassesIcon}
-              alt='Estudar'
+              alt='Dar aulas'
             />
-            Estudar
+            Dar aulas
           </Link>
         </div>
 
